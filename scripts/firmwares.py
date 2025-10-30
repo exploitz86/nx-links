@@ -40,39 +40,54 @@ class Firmwares(BaseModule):
 """
 
 from basemodule import BaseModule
-from bs4 import BeautifulSoup
-import requests
+from github import Github, GithubException
+import re
 
 class Firmwares(BaseModule):
     def __init__(self):
-        self.url = "https://darthsternie.net/switch-firmwares/"
-        self.limit = 5
+        self.repo_owner = "THZoria"
+        self.repo_name = "NX_Firmware"
+        self.limit = 10  # Increased limit since GitHub releases are more reliable
         BaseModule.__init__(self)
 
-    def get_content(self, tag):
-        return tag.contents[0]
+    def sort_firmware_versions(self, release):
+        """Sort firmware releases by version number (newest first)"""
+        # Extract version from tag_name or name (e.g., "v18.1.0" -> "18.1.0")
+        version_match = re.search(r'(\d+)\.(\d+)\.(\d+)', release.tag_name or release.name)
+        if version_match:
+            major, minor, patch = map(int, version_match.groups())
+            # Create sortable version number (higher = newer)
+            return (major * 10000) + (minor * 100) + patch
+        return 0
 
     def handle_module(self):
-        page = requests.get(self.url)
-        soup = BeautifulSoup(page.content, "html.parser")
-        tables = soup.find_all("tbody")
-        if tables != []:
-            titles = list(
-                map(self.get_content, (tables[0].find_all("td", {"class": "column-1"}))))
-            links_archive = tables[0].find_all("td", {"class": "column-5"})
-            links_mega = tables[0].find_all("td", {"class": "column-4"})
-            for i in range(min(self.limit, len(titles))):
-                if links_archive[i].find("a"):
-                    self.out[f"[archive.org] {titles[i]}"] = links_archive[i].find("a").get("href")
-                if links_mega[i].find("a"):
-                    self.out[f"[mega.nz] {titles[i]}"] = links_mega[i].find("a").get("href")
-
-            china_titles = list(
-                map(self.get_content, tables[1].find_all("td", {"class": "column-1"})))
-            china_links_archive = tables[1].find_all("td", {"class": "column-5"})
-            china_links_mega = tables[1].find_all("td", {"class": "column-4"})
-            for i in range(min(self.limit, len(china_titles))):
-                if china_links_archive[i].find("a"):
-                    self.out[f"[archive.org] [China fw] {china_titles[i]}"] = china_links_archive[i].find("a").get("href")
-                if china_links_mega[i].find("a"):
-                    self.out[f"[mega.nz] [China fw] {china_titles[i]}"] = china_links_mega[i].find("a").get("href")
+        try:
+            # Use GitHub API to get releases (use token from basemodule args)
+            from basemodule import args
+            gh = Github(args.githubToken)
+            repo = gh.get_repo(f"{self.repo_owner}/{self.repo_name}")
+            
+            # Get all releases and sort by version
+            releases = list(repo.get_releases())
+            releases.sort(key=self.sort_firmware_versions, reverse=True)
+            
+            # Limit to recent releases
+            recent_releases = releases[:self.limit] if len(releases) > self.limit else releases
+            
+            for release in recent_releases:
+                # Look for Firmware.*.zip files in release assets
+                for asset in release.get_assets():
+                    if re.match(r"Firmware.*\.zip", asset.name):
+                        # Extract firmware version/name from filename
+                        firmware_match = re.match(r"(Firmware.*)\.zip", asset.name)
+                        if firmware_match:
+                            firmware_name = firmware_match.group(1)
+                            # Add to output with GitHub download link
+                            self.out[f"[GitHub] {firmware_name}"] = asset.browser_download_url
+                            
+        except GithubException as e:
+            print(f"GitHub API error fetching firmwares from {self.repo_owner}/{self.repo_name}: {e}")
+            # Fallback: continue without firmware data rather than crash
+        except Exception as e:
+            print(f"Error fetching firmwares from GitHub: {e}")
+            # Fallback: continue without firmware data rather than crash
