@@ -7,10 +7,10 @@
         "Atmosphere": {
             "atmosphere-1.9.5-master-de9b02007+hbl-2.4.4+hbmenu-3.6.0.zip": "https://github.com/Atmosphere-NX/Atmosphere/releases/download/1.9.5/atmosphere-1.9.5-master-de9b02007%2Bhbl-2.4.4%2Bhbmenu-3.6.0.zip"
         },
-        "DeepSea": {
-            "deepsea-advanced_v4.13.0.zip": "https://github.com/Team-Neptune/DeepSea/releases/download/v4.13.0/deepsea-advanced_v4.13.0.zip",
-            "deepsea-minimal_v4.13.0.zip": "https://github.com/Team-Neptune/DeepSea/releases/download/v4.13.0/deepsea-minimal_v4.13.0.zip",
-            "deepsea-normal_v4.13.0.zip": "https://github.com/Team-Neptune/DeepSea/releases/download/v4.13.0/deepsea-normal_v4.13.0.zip"
+        "Ascent": {
+            "ascent-advanced_v1.00.0.zip": "https://github.com/exploitz86/Ascent/releases/download/v1.00.0/ascent-advanced_v1.00.0.zip",
+            "ascent-minimal_v1.00.0.zip": "https://github.com/exploitz86/Ascent/releases/download/v1.00.0/ascent-minimal_v1.00.0.zip",
+            "ascent-normal_v1.00.0.zip": "https://github.com/exploitz86/Ascent/releases/download/v1.00.0/ascent-normal_v1.00.0.zip"
         }
     },
     "hekate": {
@@ -33,6 +33,6 @@
         "[GitHub] Firmware.19.0.1.Rebootless": "https://github.com/THZoria/NX_Firmware/releases/download/19.0.1r/Firmware.19.0.1.Rebootless.zip"
     },
     "hekate_ipl": {
-        "hekate_ipl.ini": "https://raw.githubusercontent.com/HamletDuFromage/nx-links/master/resources/hekate_ipl.ini"
+        "hekate_ipl.ini": "https://raw.githubusercontent.com/exploitz86/nx-links/master/resources/hekate_ipl.ini"
     }
 }
