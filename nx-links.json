@@ -21,6 +21,7 @@
         "TegraExplorer.bin": "https://github.com/suchmememanyskill/TegraExplorer/releases/download/4.2.0/TegraExplorer.bin"
     },
     "firmwares": {
+        "[GitHub] Firmware.21.0.0": "https://github.com/THZoria/NX_Firmware/releases/download/21.0.0/Firmware.21.0.0.zip",
         "[GitHub] Firmware.20.5.0": "https://github.com/THZoria/NX_Firmware/releases/download/20.5.0/Firmware.20.5.0.zip",
         "[GitHub] Firmware.20.4.0": "https://github.com/THZoria/NX_Firmware/releases/download/20.4.0/Firmware.20.4.0.zip",
         "[GitHub] Firmware.20.3.0": "https://github.com/THZoria/NX_Firmware/releases/download/20.3.0/Firmware.20.3.0.zip",
@@ -29,8 +30,7 @@
         "[GitHub] Firmware.20.1.1": "https://github.com/THZoria/NX_Firmware/releases/download/20.1.1/Firmware.20.1.1.zip",
         "[GitHub] Firmware.20.1.0": "https://github.com/THZoria/NX_Firmware/releases/download/20.1.0/Firmware.20.1.0.zip",
         "[GitHub] Firmware.20.0.1": "https://github.com/THZoria/NX_Firmware/releases/download/20.0.1/Firmware.20.0.1.zip",
-        "[GitHub] Firmware.20.0.0": "https://github.com/THZoria/NX_Firmware/releases/download/20.0.0/Firmware.20.0.0.zip",
-        "[GitHub] Firmware.19.0.1.Rebootless": "https://github.com/THZoria/NX_Firmware/releases/download/19.0.1r/Firmware.19.0.1.Rebootless.zip"
+        "[GitHub] Firmware.20.0.0": "https://github.com/THZoria/NX_Firmware/releases/download/20.0.0/Firmware.20.0.0.zip"
     },
     "hekate_ipl": {
         "hekate_ipl.ini": "https://raw.githubusercontent.com/exploitz86/nx-links/master/resources/hekate_ipl.ini"
