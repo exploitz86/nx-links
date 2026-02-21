@@ -21,7 +21,7 @@
         "TegraExplorer.bin": "https://github.com/suchmememanyskill/TegraExplorer/releases/download/4.2.0/TegraExplorer.bin"
     },
     "firmwares": {
-        "[GitHub] Firmware.21.2.0": "https://github.com/THZoria/NX_Firmware/releases/download/21.2.0/Firmware.21.2.0.zip",
+        "[GitHub] Firmware_21.2.0": "https://github.com/THZoria/NX_Firmware/releases/download/21.2.0/Firmware_21.2.0.zip",
         "[GitHub] Firmware.21.1.0": "https://github.com/THZoria/NX_Firmware/releases/download/21.1.0/Firmware.21.1.0.zip",
         "[GitHub] Firmware.21.0.1": "https://github.com/THZoria/NX_Firmware/releases/download/21.0.1/Firmware.21.0.1.zip",
         "[GitHub] Firmware.21.0.0": "https://github.com/THZoria/NX_Firmware/releases/download/21.0.0/Firmware.21.0.0.zip",
