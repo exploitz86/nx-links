@@ -1,7 +1,6 @@
 {
     "bootloaders": {
-        "hekate_ctcaer_6.5.2_Nyx_1.9.2.zip": "https://github.com/CTCaer/hekate/releases/download/v6.5.2/hekate_ctcaer_6.5.2_Nyx_1.9.2.zip",
-        "argon-nx.zip": "https://github.com/Guillem96/argon-nx/releases/download/1.1-alpha/argon-nx.zip"
+        "hekate_ctcaer_6.5.2_Nyx_1.9.2.zip": "https://github.com/CTCaer/hekate/releases/download/v6.5.2/hekate_ctcaer_6.5.2_Nyx_1.9.2.zip"
     },
     "cfws": {
         "Atmosphere": {
@@ -20,8 +19,7 @@
     "payloads": {
         "fusee.bin": "https://github.com/Atmosphere-NX/Atmosphere/releases/download/1.11.1/fusee.bin",
         "TegraExplorer.bin": "https://github.com/suchmememanyskill/TegraExplorer/releases/download/4.2.0/TegraExplorer.bin",
-        "Lockpick_RCM.bin": "https://github.com/Kofysh/Lockpick_RCM/releases/download/v1.9.19/Lockpick_RCM.bin",
-        "Lockpick_RCM_unc.bin": "https://github.com/Kofysh/Lockpick_RCM/releases/download/v1.9.19/Lockpick_RCM_unc.bin"
+        "Lockpick_RCM.bin": "https://github.com/Kofysh/Lockpick_RCM/releases/download/v1.9.19/Lockpick_RCM.bin"
     },
     "firmwares": {
         "[GitHub] Firmware.22.1.0": "https://github.com/THZoria/NX_Firmware/releases/download/22.1.0/Firmware.22.1.0.zip",
