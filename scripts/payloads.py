@@ -16,7 +16,7 @@ class Payloads(BaseModule):
                 "assetPatterns": [".*fusee.*\\.bin"]
             },
             {
-                "username": "shchmue",
+                "username": "Kofysh",
                 "reponame": "Lockpick_RCM",
                 "prerelease": True,
                 "assetPatterns": [".*Lockpick_RCM.*\\.bin"]

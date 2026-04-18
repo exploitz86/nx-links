@@ -1,5 +1,6 @@
 import json
 
+import ascent_hos
 import bootloaders
 import cfws
 import firmwares
@@ -20,6 +21,7 @@ if __name__ == '__main__':
     modules = [
         bootloaders.Bootloaders(),
         cfws.Cfws(),
+        ascent_hos.AscentHos(),
         hekate.Hekate(),
         payloads.Payloads(),
         firmwares.Firmwares(),
@@ -29,7 +31,11 @@ if __name__ == '__main__':
         if module.out == {}:
             print(f"Module {module.__module__} returned an empty dict.")
             continue
-        out[module.__module__] = module.out
+        output_section = getattr(module, "output_section", module.__module__)
+        if output_section in out and isinstance(out[output_section], dict):
+            out[output_section].update(module.out)
+        else:
+            out[output_section] = module.out
 
     with open(json_file, 'w') as out_file:
         json.dump(out, out_file, indent=4)
