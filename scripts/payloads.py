@@ -19,7 +19,7 @@ class Payloads(BaseModule):
                 "username": "Kofysh",
                 "reponame": "Lockpick_RCM",
                 "prerelease": True,
-                "assetPatterns": [".*Lockpick_RCM.*\\.bin"]
+                "assetPatterns": [".*Lockpick_RCM\\.bin$"]
             },
             {
                 "username": "suchmememanyskill",
