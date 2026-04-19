@@ -29,8 +29,8 @@ jobs:
 
       - name: push changes
         run: |
-          git config --global user.name 'HomletBot'
-          git config --global user.email '90281142+Homletbot@users.noreply.github.com'
+          git config --global user.name 'eXploitzBot'
+          git config --global user.email '61384920+exploitz86@users.noreply.github.com'
           CHANGED=$(git diff --name-only)
           git add .
           if [[ `git status --porcelain` ]]; then
