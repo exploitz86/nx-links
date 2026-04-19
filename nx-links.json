@@ -11,7 +11,8 @@
             "ascent-minimal_v3.00.0.zip": "https://github.com/exploitz86/Ascent/releases/download/v3.00.0/ascent-minimal_v3.00.0.zip",
             "ascent-normal_v3.00.0.zip": "https://github.com/exploitz86/Ascent/releases/download/v3.00.0/ascent-normal_v3.00.0.zip"
         },
-        "Ascent_Supported_HOS": "22.1.0"
+        "Ascent_Supported_HOS": "22.1.0",
+        "Atmosphere_Supported_HOS": "22.1.0"
     },
     "hekate": {
         "hekate_ctcaer_6.5.2_Nyx_1.9.2.zip": "https://github.com/CTCaer/hekate/releases/download/v6.5.2/hekate_ctcaer_6.5.2_Nyx_1.9.2.zip"
