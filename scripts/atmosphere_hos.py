@@ -2,13 +2,13 @@ from basemodule import BaseModule
 import re
 
 
-class AscentHos(BaseModule):
+class AtmosphereHos(BaseModule):
     def __init__(self):
         self.output_section = "cfws"
         self.config = [
             {
-                "username": "exploitz86",
-                "reponame": "Ascent"
+                "username": "Atmosphere-NX",
+                "reponame": "Atmosphere"
             }
         ]
         BaseModule.__init__(self)
@@ -20,11 +20,11 @@ class AscentHos(BaseModule):
 
         body = release.body or ""
         match = re.search(
-            r"^\s*Latest supported HOS:\s*([0-9]+(?:\.[0-9]+){1,3})\s*$",
+            r"support was added for ([0-9]+(?:\.[0-9]+){1,3})\.",
             body,
-            re.MULTILINE | re.IGNORECASE
+            re.IGNORECASE
         )
         if match:
-            self.out["Ascent_Supported_HOS"] = match.group(1)
+            self.out["Atmosphere_Supported_HOS"] = match.group(1)
         else:
-            self.out["Ascent_Supported_HOS"] = "Unknown"
+            self.out["Atmosphere_Supported_HOS"] = "Unknown"

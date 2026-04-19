@@ -1,6 +1,7 @@
 import json
 
 import ascent_hos
+import atmosphere_hos
 import bootloaders
 import cfws
 import firmwares
@@ -22,6 +23,7 @@ if __name__ == '__main__':
         bootloaders.Bootloaders(),
         cfws.Cfws(),
         ascent_hos.AscentHos(),
+        atmosphere_hos.AtmosphereHos(),
         hekate.Hekate(),
         payloads.Payloads(),
         firmwares.Firmwares(),
