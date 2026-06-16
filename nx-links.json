@@ -32,7 +32,8 @@
         "[GitHub] Firmware.20.5.0": "https://github.com/THZoria/NX_Firmware/releases/download/20.5.0/Firmware.20.5.0.zip",
         "[GitHub] Firmware.20.4.0": "https://github.com/THZoria/NX_Firmware/releases/download/20.4.0/Firmware.20.4.0.zip",
         "[GitHub] Firmware.20.3.0": "https://github.com/THZoria/NX_Firmware/releases/download/20.3.0/Firmware.20.3.0.zip",
-        "[GitHub] Firmware.20.2.0": "https://github.com/THZoria/NX_Firmware/releases/download/20.2.0/Firmware.20.2.0.zip"
+        "[GitHub] Firmware.20.2.0": "https://github.com/THZoria/NX_Firmware/releases/download/20.2.0/Firmware.20.2.0.zip",
+        "[GitHub] Firmware.22.5.0": "https://github.com/THZoria/NX_Firmware/releases/download/22.5.0/Firmware.22.5.0.zip"
     },
     "hekate_ipl": {
         "hekate_ipl.ini": "https://raw.githubusercontent.com/exploitz86/nx-links/master/resources/hekate_ipl.ini"
