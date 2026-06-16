@@ -1,10 +1,11 @@
 {
     "bootloaders": {
-        "hekate_ctcaer_6.5.2_Nyx_1.9.2.zip": "https://github.com/CTCaer/hekate/releases/download/v6.5.2/hekate_ctcaer_6.5.2_Nyx_1.9.2.zip"
+        "hekate_ctcaer_6.5.2_Nyx_1.9.2.zip": "https://github.com/CTCaer/hekate/releases/download/v6.5.2/hekate_ctcaer_6.5.2_Nyx_1.9.2.zip",
+        "hekate_ctcaer_6.5.3_Nyx_1.9.3.zip": "https://github.com/CTCaer/hekate/releases/download/v6.5.3/hekate_ctcaer_6.5.3_Nyx_1.9.3.zip"
     },
     "cfws": {
         "Atmosphere": {
-            "atmosphere-1.11.1-master-d04c20a04+hbl-2.4.5+hbmenu-3.6.1.zip": "https://github.com/Atmosphere-NX/Atmosphere/releases/download/1.11.1/atmosphere-1.11.1-master-d04c20a04%2Bhbl-2.4.5%2Bhbmenu-3.6.1.zip"
+            "atmosphere-1.11.2-master-5388824be+hbl-2.4.5+hbmenu-3.6.1.zip": "https://github.com/Atmosphere-NX/Atmosphere/releases/download/1.11.2/atmosphere-1.11.2-master-5388824be%2Bhbl-2.4.5%2Bhbmenu-3.6.1.zip"
         },
         "Ascent": {
             "ascent-advanced_v3.00.0.zip": "https://github.com/exploitz86/Ascent/releases/download/v3.00.0/ascent-advanced_v3.00.0.zip",
@@ -12,13 +13,14 @@
             "ascent-normal_v3.00.0.zip": "https://github.com/exploitz86/Ascent/releases/download/v3.00.0/ascent-normal_v3.00.0.zip"
         },
         "Ascent_Supported_HOS": "22.1.0",
-        "Atmosphere_Supported_HOS": "22.1.0"
+        "Atmosphere_Supported_HOS": "22.5.0"
     },
     "hekate": {
-        "hekate_ctcaer_6.5.2_Nyx_1.9.2.zip": "https://github.com/CTCaer/hekate/releases/download/v6.5.2/hekate_ctcaer_6.5.2_Nyx_1.9.2.zip"
+        "hekate_ctcaer_6.5.2_Nyx_1.9.2.zip": "https://github.com/CTCaer/hekate/releases/download/v6.5.2/hekate_ctcaer_6.5.2_Nyx_1.9.2.zip",
+        "hekate_ctcaer_6.5.3_Nyx_1.9.3.zip": "https://github.com/CTCaer/hekate/releases/download/v6.5.3/hekate_ctcaer_6.5.3_Nyx_1.9.3.zip"
     },
     "payloads": {
-        "fusee.bin": "https://github.com/Atmosphere-NX/Atmosphere/releases/download/1.11.1/fusee.bin",
+        "fusee.bin": "https://github.com/Atmosphere-NX/Atmosphere/releases/download/1.11.2/fusee.bin",
         "TegraExplorer.bin": "https://github.com/suchmememanyskill/TegraExplorer/releases/download/4.2.0/TegraExplorer.bin",
         "Lockpick_RCM.bin": "https://github.com/Kofysh/Lockpick_RCM/releases/download/v1.9.19/Lockpick_RCM.bin"
     },
