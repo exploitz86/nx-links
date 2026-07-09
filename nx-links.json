@@ -22,7 +22,7 @@
     "payloads": {
         "fusee.bin": "https://github.com/Atmosphere-NX/Atmosphere/releases/download/1.11.2/fusee.bin",
         "TegraExplorer.bin": "https://github.com/suchmememanyskill/TegraExplorer/releases/download/4.2.0/TegraExplorer.bin",
-        "Lockpick_RCM.bin": "https://github.com/Kofysh/Lockpick_RCM/releases/download/v1.9.19/Lockpick_RCM.bin"
+        "Lockpick_RCM.bin": "https://github.com/Kofysh/Lockpick_RCM/releases/download/v1.12.0/Lockpick_RCM.bin"
     },
     "firmwares": {
         "[GitHub] Firmware.22.1.0": "https://github.com/THZoria/NX_Firmware/releases/download/22.1.0/Firmware.22.1.0.zip",
