@@ -9,11 +9,11 @@
             "atmosphere-1.12.0-master-28d6a2e11+hbl-2.4.5+hbmenu-3.6.1.zip": "https://github.com/Atmosphere-NX/Atmosphere/releases/download/1.12.0/atmosphere-1.12.0-master-28d6a2e11%2Bhbl-2.4.5%2Bhbmenu-3.6.1.zip"
         },
         "Ascent": {
-            "ascent-advanced_v3.01.0.zip": "https://github.com/exploitz86/Ascent/releases/download/v3.01.0/ascent-advanced_v3.01.0.zip",
-            "ascent-minimal_v3.01.0.zip": "https://github.com/exploitz86/Ascent/releases/download/v3.01.0/ascent-minimal_v3.01.0.zip",
-            "ascent-normal_v3.01.0.zip": "https://github.com/exploitz86/Ascent/releases/download/v3.01.0/ascent-normal_v3.01.0.zip"
+            "ascent-advanced_v4.00.0.zip": "https://github.com/exploitz86/Ascent/releases/download/v4.00.0/ascent-advanced_v4.00.0.zip",
+            "ascent-minimal_v4.00.0.zip": "https://github.com/exploitz86/Ascent/releases/download/v4.00.0/ascent-minimal_v4.00.0.zip",
+            "ascent-normal_v4.00.0.zip": "https://github.com/exploitz86/Ascent/releases/download/v4.00.0/ascent-normal_v4.00.0.zip"
         },
-        "Ascent_Supported_HOS": "22.5.0",
+        "Ascent_Supported_HOS": "23.0.0",
         "Atmosphere_Supported_HOS": "23.0.0"
     },
     "hekate": {
